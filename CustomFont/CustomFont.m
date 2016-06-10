@@ -14,7 +14,7 @@
 - (UIFont *)customfontName:(NSString *)fontName andSize:(CGFloat)fontSize{
     
     NSString* mainBundlePath = [[NSBundle mainBundle] resourcePath];
-    NSString* frameworkBundlePath = [mainBundlePath stringByAppendingPathComponent:@"CustomFont"];
+    NSString* frameworkBundlePath = [mainBundlePath stringByAppendingPathComponent:@"CustomFont.bundle"];
     
     
     NSString *fontPath = [[NSBundle bundleWithPath:frameworkBundlePath] pathForResource:fontName ofType:@"ttf"];
