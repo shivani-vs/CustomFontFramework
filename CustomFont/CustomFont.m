@@ -11,10 +11,10 @@
 
 @implementation CustomFont
 
-- (UIFont *)customfontFromBundle:(NSString *)bundleName withFontName:(NSString *)fontName andSize:(CGFloat)fontSize{
+- (UIFont *)customfontName:(NSString *)fontName andSize:(CGFloat)fontSize{
     
     NSString* mainBundlePath = [[NSBundle mainBundle] resourcePath];
-    NSString* frameworkBundlePath = [mainBundlePath stringByAppendingPathComponent:bundleName];
+    NSString* frameworkBundlePath = [mainBundlePath stringByAppendingPathComponent:@"CustomFont"];
     
     
     NSString *fontPath = [[NSBundle bundleWithPath:frameworkBundlePath] pathForResource:fontName ofType:@"ttf"];

@@ -11,6 +11,6 @@
 
 @interface CustomFont : NSObject
 
-- (UIFont *)customfontFromBundle:(NSString *)bundleName withFontName:(NSString *)fontName andSize:(CGFloat)fontSize;
+- (UIFont *)customfontName:(NSString *)fontName andSize:(CGFloat)fontSize;
 
 @end
